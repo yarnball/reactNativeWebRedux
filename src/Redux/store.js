@@ -1,7 +1,6 @@
-import { titleUpdate, counter } from './reducers'
+import { titleUpdate } from './reducers'
 import { combineReducers } from 'redux'
 
 export default combineReducers({
-  titleUpdate,
-  counter
+  titleUpdate
 })

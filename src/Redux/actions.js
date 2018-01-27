@@ -1,5 +1,3 @@
-export const increaseAction = { type: 'INCREMENT' }
-export const decreaseAction = { type: 'DECREMENT' }
 export const textChangeAction = payload => ({ type: "TEXTCHANGE", payload });
 
 export function loadData(payload) { 
@@ -11,6 +9,6 @@ export function loadData(payload) {
      // )
 	.then(res => res.json())
 	.then((data) => {
-        dispatch({ type: 'LOAD_GOOD', data: data, id: payload.id, })
+        dispatch({ type: 'LOAD_SUCCESS', data: data, id: payload.id, })
       })
 }
